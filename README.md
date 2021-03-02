@@ -60,6 +60,16 @@ If Qt Creator fails to run the application due to errors with linking the proper
 
 to the beginning of the line.
 
+### Ubuntu 20.04 install requirements
+
+Some notes on ubuntu install that weren't covered in the documentation. Prerequisites:
+
+    sudo apt install qml-module-qtmultimedia qml-module-qtquick-controls2 qtcreator qtdeclarative5-dev qtmultimedia5-dev qt5-qmake libusb-1.0-0 libusb-1.0-0-dev libjpeg-dev
+    
+Note - you need to run the resultant exe as root or get your udev permissions right to be able to access the camera.
+
+Qmake on it's own didn't seem to do anything so I just ran qtcreator in the end to build
+
 ### Via Command Line
 You can also build from the command line:
 
